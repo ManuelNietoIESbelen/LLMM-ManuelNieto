@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <poblacion>40000000</poblacion>
+        <capital>Madrid</capital>
+        <superficie unidad="km">500000</superficie>
+    </pais>
+    <pais>
+        <nombre>Francia</nombre>
+        <poblacion>30000000</poblacion>
+        <capital>Paris</capital>
+        <superficie unidad="km">500000</superficie>
+    </pais>
+    <pais>
+        <nombre>Alemania</nombre>
+        <poblacion>45000000</poblacion>
+        <capital>Berlin</capital>
+        <superficie unidad="km">500000</superficie>
+    </pais>
+    <pais>
+        <nombre>Belgica</nombre>
+        <poblacion>20000000</poblacion>
+        <capital>Bruselas</capital>
+        <superficie unidad="km">5000000</superficie>
+    </pais>
+
+
+</paises>
