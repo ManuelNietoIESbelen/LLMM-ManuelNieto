@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+    <persona>
+        <nombre>Manuel</nombre>
+        <fecha_de_nacimiento>
+            <dia>17</dia>
+            <mes>3</mes>
+            <anio>2004</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Malaga</ciudad>
+    </persona>
+    <persona>
+        <nombre>Alvaro</nombre>
+        <fecha_de_nacimiento>
+            <dia>8</dia>
+            <mes>6</mes>
+            <anio>2002</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Ouresnse</ciudad>
+    </persona>
+    <persona>
+        <nombre>Pablo</nombre>
+        <fecha_de_nacimiento>
+            <dia>13</dia>
+            <mes>3</mes>
+            <anio>2005</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Barcelona</ciudad>
+    </persona>
+</personas>
