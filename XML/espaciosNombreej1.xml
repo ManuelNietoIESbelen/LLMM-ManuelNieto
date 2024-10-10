@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vehiculos >
+<vehiculos>
     <v:coche xmlns:v="https://iesbelen.org/xml/coches">
         <v:marca>Toyota</v:marca>
         <v:modelo>Corolla</v:modelo>
