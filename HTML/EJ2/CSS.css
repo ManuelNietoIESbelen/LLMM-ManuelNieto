@@ -1,0 +1,17 @@
+body{
+    background-image: url(assets/fondo.gif) ; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: blue;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color:darkred;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}

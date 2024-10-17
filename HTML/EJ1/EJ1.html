@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body bgcolor="#E0FFFF">
+    <h1>Hola mundo</h1>
+    <p><b>Lorem</b> <i>ipsum </i>dolor sit amet consectetur adipisicing elit. Provident quas, voluptatibus eos animi sint qui voluptatem fugiat voluptates autem labore dolor aspernatur similique ratione repellendus distinctio necessitatibus velit nam impedit!</p>
+
+    <h2>Funciones principales</h2>
+    <ul>
+        <li>Intercambio de datos entre sistemas heterogeneos</li>
+        <li>Configuracion de aplicaciones y servicios</li>
+        <li>Web Services(SOAP)</li>
+        <li>Almacenamiento</li>
+    </ul>
+    <h2>Lenguaje de marcas</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>java script</li>
+        <li>json</li>
+        <li>DTD</li>
+        <li>XML Schema</li>
+    </ol>
+
+    <h3>Validadores</h3>
+   
+    <p>Visita este enlace para acceder al validador de XML
+        y este otro para el de HTML</p>
+
+    <!--Insertar un link 
+    href - direccion del link-->
+    <a href="https://jsonformatter.org/xml-validator">Validadores de XML</a>
+
+    <a href="https://validator.w3.org/">Validador de HTML</a><br><br>
+
+    <!--Insertar una imagen 
+    src - enlace de la imagen (local/Internet)
+    alt - lo que sale si no hay imagen que insertar -->
+    <img width="150" height="200" src="https://i.pinimg.com/564x/be/58/6e/be586e3bf0670afd31465e1692f46055.jpg" alt="Imagen de ejemplo"/>
+    
+
+    <!--Formación de tabla
+        border - para el tamaño del borde
+        tr - para definir las fila, es decir los que van a la derecha
+        th / td - para definir las celdas/columnas th=negrita y td=normal 
+        
+        tr | td  td  td
+        tr | td  td  td
+        tr | td  td  td
+        -->
+
+        
+    <table border="2.5">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Manuel</td>
+            <td>Nieto</td>
+            <td>20</td>
+            <td>Malaga</td>
+        </tr>
+        <tr>
+            <td>Santiago</td>
+            <td>Bernabeu</td>
+            <td>60</td>
+            <td>Madrid</td>
+        </tr>
+    </table>
+
+
+    <!--Creacion de formulario
+        action - lo que hace el formulario, en este caso un boton de enviar 
+        label - introduccion de datos
+        for - para que es
+        input - para recibir el dato introducido
+        type - tipo de dato
+        id - de quien recibe el dato 
+        name - nombre del dato-->
+    <h2>Formulario de contactos</h2>
+    <form action="/enviar" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"/><br><br>
+
+        <label for="email">Correo electronico</label>
+        <input type="email" id="email" name="email"/><br><br>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+</body>
+
+</html>

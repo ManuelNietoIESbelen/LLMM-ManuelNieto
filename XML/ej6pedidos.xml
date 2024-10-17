@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <pedido codigo="1111">
+        <nombre_y_apellido>
+            <nombre>Jose Antonio</nombre>
+            <apellido>Lojo</apellido>
+        </nombre_y_apellido>
+        <articulos>
+            <articulo>Bicicleta A2020</articulo>
+            <articulo>Ordenador modelo 1345</articulo>
+        </articulos>
+        <direccion>
+            <calle>Calle barco</calle>
+            <numero>4</numero>
+            <piso>3A</piso>
+            <provincia>Málaga</provincia>
+            <codigo_postal>29004</codigo_postal>
+        </direccion>
+        <fecha>
+            <dia>20</dia>
+            <mes>9</mes>
+            <anio>29004</anio>
+        </fecha>
+    </pedido>
+
+</pedidos>
