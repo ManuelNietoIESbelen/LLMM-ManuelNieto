@@ -2,7 +2,7 @@
 <biblioteca>
    <libro>
     <titulo>Harry Potter y la piedra filosofal</titulo>
-    <autores>ç
+    <autores>
         <autor>J.K. Rowling</autor>
     </autores>
     <Anio_publicacion >2001</Anio_publicacion>
@@ -14,8 +14,8 @@
         acudir entonces a una famosa escuela de magia y 
         hechicería: Howards.</sinopsis>
     <comentarios>
-        <comentario>Una obra maestra de la fantasía épica.</comentario>
-       <comentario>Muy buena pelicula, me gusto mucho</comentario> 
+        <comentario user="persona">Una obra maestra de la fantasía épica.</comentario>
+       <comentario user="persona">Muy buena pelicula, me gusto mucho</comentario> 
     </comentarios>
    </libro>
 
@@ -33,7 +33,7 @@
         la búsqueda de bienes mundanos se convertirá en el descubrimiento 
         del tesoro interior.</sinopsis>
     <comentarios>
-        <comentario>Es muy buen libro de desarrollo personal</comentario>
+        <comentario user="persona">Es muy buen libro de desarrollo personal</comentario>
     </comentarios>
    </libro>
 
@@ -59,7 +59,7 @@
          que usamos nuestros poderes de mala manera. Convertirnos en héroes.Pero ¿quién 
          quiere ser un héroe pudiendo ser un antihéroe?</sinopsis>
     <comentarios>
-        <comentarios>No me ha gustado nada el libro</comentarios>
+        <comentario user="persona">No me ha gustado nada el libro</comentario>
     </comentarios>
    </libro>
 </biblioteca>

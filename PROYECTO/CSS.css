@@ -1,0 +1,125 @@
+#lineas_fondo{
+    color: rgb(255, 255, 255);
+    height:5px;
+    background-color: white;
+    
+}   
+
+#imagen_pp{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px ;
+  margin-bottom: 50px ;
+}
+#imagenes_desp {
+    display: flex;
+    justify-content: center;
+    width: 1900px;
+    height: 650px;
+
+}
+
+#imagenes_desp img {
+    border-radius: 0px;
+    /*cambiar radio del borde(Poner el borde redondeado o con otras formas)*/
+    width: 0px;
+    /*ancho inicial de la imagen*/
+    /* max-width: 0px; */
+    /* Las imágenes empiezan con max-width en 0 */
+    /* height: auto; */
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 3;
+    transition: .5s ease;
+    /*Transicion*/
+    /* transition: max-width .5s ease, opacity .5s ease; */
+    /* Transición para max-width */
+
+}
+
+#imagenes_desp img:hover {
+    cursor: crosshair;
+    /*cambiar el cursor a una cruz*/
+    width: 300px;
+    /*ancho al hacer el hover*/
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#titulo_index {
+    text-decoration: underline wavy white;
+    /*Poner una linea debajo ondulada*/
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+#titulo_carteles {
+    text-decoration: overline;
+    /*Poner una linea encima*/
+    color: #ece0dd;
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#carteles_body {
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,142,247,1) 50%, rgba(0,172,207,1) 100%);
+
+}
+
+#index_body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,142,247,1) 50%, rgba(0,172,207,1) 100%);
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: url(assets/imagenes/fondo_menu.jpg);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+    margin-top: 20px;
+    position: absolute;
+    font-size: 32px; /* Aumenta el tamaño de la fuente */
+    height: 100px; /* Ajusta la altura del botón */
+    width: 235px; /* Ajusta el ancho del botón */
+}
+
+
+.menu:hover {
+    background-color:black;
+    
+}
+
+.dropdown {
+    position: relative;/* o absolute o fixed */
+    z-index: 10; /* Asegúrate de que este valor sea mayor que el de las imágenes */
+    display: inline-block;
+}
+
+/*Menu cuando está desplegado*/
+.dropdown-child {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey ;
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
