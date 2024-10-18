@@ -5,29 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="CSS.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <!--Menu desplegable-->
-    <div class="dropdown">
+    <header id="encabezado">
+        
 
-        <button class="menu">Menu</button>
-
-        <div class="dropdown-child">
-            <hr>
-            <b><a href="01_indexP.html">Página Principal</a></b>
-            <hr />
-            <b><a href="02_cartelesP.html">Carteles de película</a></b>
-            <hr />
-            <b><a href="03_contactoP.html">Contacto</a></b>
-            <hr />
-            <b><a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_2024_topmovies">Mejores películas
-                    2024</a></b>
-            <hr />
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input">
         </div>
-    </div>
-    </div>
-    <hr size="5" color="#ADD8E6" />
+
+        <!-- Menú desplegable -->
+        <div class="dropdown">
+            <!-- Botón que activa el menú desplegable -->
+            <button class="menu">Menu</button>
+
+            <!-- Contenido del menú desplegable -->
+            <div class="dropdown-child">
+                <div class="dropdown-child1">
+                    <b><a href="01_indexP.html">Página Principal</a></b>
+                </div>
+                <div class="dropdown-child2">
+
+                    <b><a href="02_cartelesP.html">Colecciones</a></b>
+                </div>
+                <div class="dropdown-child3">
+
+                    <b><a href="03_contactoP.html">Contactos</a></b>
+                </div>
+
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
