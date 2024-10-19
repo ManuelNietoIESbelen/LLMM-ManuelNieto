@@ -2,8 +2,8 @@
   /*Poner una linea encima*/
   color: #ece0dd;
   text-align: center;
-  font-size: 70px;
-  font-style: italic;
+  font-size: 5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -27,7 +27,7 @@
   /* Redondea los bordes de las imágenes */
   border-radius: 60px;
   /* Establece el ancho inicial de las imágenes en 0px */
-  width: 0px;
+  width: 15rem;
   /* Permite que las imágenes crezcan para ocupar el espacio disponible */
   flex-grow: 1;
   /* Ajusta el tamaño de las imágenes para que se adapten al contenedor */
@@ -39,7 +39,7 @@
 
   margin: 10px auto; /* Centra las imágenes y añade margen */
 
-  height: 750px; /* Mantiene la proporción de las imágenes */
+  height: 500px; /* Mantiene la proporción de las imágenes */
 }
 
 /* Estilo de las imágenes al hacer hover */
@@ -47,11 +47,13 @@
   /* Cambia el cursor a una cruz de precisión */
   cursor: crosshair;
   /* Establece el ancho de las imágenes en 300px al hacer hover */
-  width: 300px;
+  width: 40rem;
   /* Establece la opacidad en 1 al hacer hover */
   opacity: 1;
   /* Aumenta el contraste de las imágenes en un 20% al hacer hover */
   filter: contrast(120%);
+
+
 }
 
 #carteles_body {
@@ -87,6 +89,8 @@
 
   /* Posicionamiento */
   position: relative; /* Posiciona el botón de forma absoluta */
+  top: 1rem;
+  left: 1rem;
 
   /* Interactividad */
   cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */

@@ -1,0 +1,115 @@
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 100% 100% 100% 100% 100% 100%;
+}
+
+.titulo {
+  text-align: center;
+  background-color: #d00000;
+}
+.menu_block {
+  background-color: aqua;
+}
+
+.menu {
+  /* Tipografía */
+  font-family: Arial, Helvetica, sans-serif; /* Define la fuente del menú */
+  font-weight: bold; /* Establece el texto en negrita */
+  font-size: 32px; /* Tamaño de la fuente */
+
+  /* Colores */
+  background-color: #af88df; /* Establece el color de fondo para el menú */
+  color: rgb(0, 0, 0); /* Color del texto */
+
+  /* Espaciado */
+  padding: 0.4rem; /* Espaciado interno del botón */
+
+  /* Dimensiones */
+  height: 5rem; /* Altura del botón */
+  width: 12rem; /* Ancho del botón */
+
+  /* Bordes */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: 0.4rem solid #16032c; /* Bordes del botón */
+
+  margin: 1rem;
+  /* Interactividad */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+}
+
+.menu:hover {
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.dropdown-child {
+  display: none; /* Ocultar el menú desplegable por defecto */
+  /* Posicionar el menú desplegable */
+  position: absolute;
+  top: 6.5rem;
+  left: 2rem;
+  width: 14rem;
+  background-color: white; /* Color de fondo del menú */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
+  z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+  
+}
+
+.menu:hover + .dropdown-child {
+  display: block; /* Mostrar el menú al pasar el ratón sobre el botón */
+  transition: 3s;
+}
+.menu:hover .dropdown-child {
+  display: block;/*Mantener el desplegable cuando el raton está encima*/
+  
+}
+.dropdown-child:hover{
+    display: inline-table;
+    
+    transition: 1s;
+}
+
+.dropdown-child div {
+  padding: 10px; /* Espaciado interno para los elementos del menú */
+}
+
+.dropdown-child div a {
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  color: black; /* Color del texto */
+}
+
+.dropdown-child div:hover {
+  background-color: #ff0000; /* Color de fondo al pasar el ratón */
+  
+  
+}
+
+
+.barra_busqueda {
+  background-color: blue;
+}
+.child1 {
+  background-color: rgb(13, 193, 40);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+.footer {
+  background-color: blueviolet;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+button {
+  align-content: center;
+}
+.big-button {
+  align-content: center;
+  height: 5rem;
+}

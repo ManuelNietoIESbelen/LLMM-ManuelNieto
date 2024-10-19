@@ -1,10 +1,12 @@
-#titulo_index {
+.titulo_index{  
   color: rgb(255, 255, 255);
-  text-align: center;
   text-decoration-line: line-through;
-  font-size: 100px;
-  background-color: rgb(0, 0, 0);
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0); 
+  grid-area: 1 / 3 / 2 / 4;
 }
+
+
 #lineas_index {
   color: rgb(0, 0, 0);
   height: 5px;
@@ -14,8 +16,8 @@
 .index_body {
   /* background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(142,142,247,1) 50%, rgba(0,172,207,1) 100%); */
-  background-image: url(assets/pingu.jpeg);
-  background-size: 475px 475px;
+  background-image: url(assets/fondoIndex2.jpeg);
+  background-size: cover;
 }
 
 .menu {
@@ -40,10 +42,11 @@
   border: 7px solid #16032c; /* Bordes del botón */
 
   /* Posicionamiento */
-  position: relative; /* Posiciona el botón de forma absoluta */
+  position: absolute; /* Posiciona el botón de forma absoluta */
 
   /* Interactividad */
-  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */ ;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .menu:hover {
@@ -55,7 +58,7 @@
 }
 
 .dropdown {
-  position: absolute; /* Posiciona el contenedor del menú desplegable de forma relativa */
+  position: ; /* Posiciona el contenedor del menú desplegable de forma relativa */
   top: 90px; /* Distancia desde la parte superior de su contenedor */
   left: 50px; /* Distancia desde la izquierda de su contenedor */
   z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
@@ -111,9 +114,7 @@
 }
 
 .search-container {
-  position: absolute; /* Posiciona el contenedor de búsqueda */
-  top: 110px; /* Margen desde la parte superior */
-  right: 50px; /* Margen desde la derecha */
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .search-input {
@@ -132,9 +133,7 @@
 }
 /* Estilos para centrar el botón */
 .center-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 2 / 1 / 3 / 4;
   height: 100vh; /* Altura completa de la ventana */
 }
 
@@ -176,7 +175,7 @@
   transition-delay: 0.15s;
 }
 .big-button:not(hover) {
-  background-color: #07622d; /* Color de fondo al no pasar el ratón */
+  background-color: #d00000; /* Color de fondo al no pasar el ratón */
   font-size: 600%;
   transition: 0.5s;
   transition-delay: 0.15s;
