@@ -1,15 +1,12 @@
-.grid-parent {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 100% 100% 100% 100% 100% 100%;
+#header_block{
+display: flex;
+align-items: center;
 }
 
-.titulo {
-  text-align: center;
-  background-color: #d00000;
-}
-.menu_block {
-  background-color: aqua;
+.menu_block{
+  position: relative;
+  width: 7%;
+  height: 100%;
 }
 
 .menu {
@@ -17,25 +14,28 @@
   font-family: Arial, Helvetica, sans-serif; /* Define la fuente del menú */
   font-weight: bold; /* Establece el texto en negrita */
   font-size: 32px; /* Tamaño de la fuente */
+  
 
   /* Colores */
   background-color: #af88df; /* Establece el color de fondo para el menú */
   color: rgb(0, 0, 0); /* Color del texto */
 
   /* Espaciado */
-  padding: 0.4rem; /* Espaciado interno del botón */
+   /* Espaciado interno del botón */
 
   /* Dimensiones */
-  height: 5rem; /* Altura del botón */
-  width: 12rem; /* Ancho del botón */
+  height: 6.5rem; /* Altura del botón */
+  width: 100%; /* Ancho del botón */
 
   /* Bordes */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  border: 0.4rem solid #16032c; /* Bordes del botón */
+  border-radius:; /* Bordes redondeados */
+  border: 7px solid #16032c; /* Bordes del botón */
 
-  margin: 1rem;
+ 
+
   /* Interactividad */
-  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */ 
+
 }
 
 .menu:hover {
@@ -46,70 +46,47 @@
   ); /* Cambia el color de fondo al pasar el ratón por encima */
 }
 
+
+/* Estilo del menú desplegable cuando está oculto */
 .dropdown-child {
-  display: none; /* Ocultar el menú desplegable por defecto */
-  /* Posicionar el menú desplegable */
+  display: none;
   position: absolute;
-  top: 6.5rem;
-  left: 2rem;
-  width: 14rem;
-  background-color: white; /* Color de fondo del menú */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
-  z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
-  
+  top: 100%; /* Distancia desde la parte superior de su contenedor */
+  left: 0;
+  background-color: rgb(94, 7, 138);
+  font-family: Arial, Helvetica, sans-serif; /* Fuente del menú desplegable */
+  min-width: 300px; /* Ancho mínimo del menú desplegable */
+  z-index: 1; /* Asegura que el menú desplegable esté por encima de otros elementos */
+  border-radius: 15px;
+}
+menu:hover+ .dropdown-child, .dropdown-child:hover{
+  display: block;/* Muestra el desplegable cuando se pasa el ratón sobre el botón o el desplegable mismo */
 }
 
-.menu:hover + .dropdown-child {
-  display: block; /* Mostrar el menú al pasar el ratón sobre el botón */
-  transition: 3s;
-}
-.menu:hover .dropdown-child {
-  display: block;/*Mantener el desplegable cuando el raton está encima*/
-  
-}
-.dropdown-child:hover{
-    display: inline-table;
-    
-    transition: 1s;
-}
-
-.dropdown-child div {
-  padding: 10px; /* Espaciado interno para los elementos del menú */
-}
-
-.dropdown-child div a {
+.dropdown-child a {
+  color: white; /* Color del texto de los enlaces en el menú desplegable */
+  padding: 10px; /* Espaciado interno de los enlaces */
   text-decoration: none; /* Sin subrayado en los enlaces */
-  color: black; /* Color del texto */
-}
-
-.dropdown-child div:hover {
-  background-color: #ff0000; /* Color de fondo al pasar el ratón */
-  
-  
+  display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
 }
 
 
-.barra_busqueda {
-  background-color: blue;
+
+
+
+.titulo{
+  width: 78%;
+  height: 6.5rem; 
+  background-color: yellowgreen;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7rem;
+
+
 }
-.child1 {
-  background-color: rgb(13, 193, 40);
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 6;
+.busqueda{
+  width: 15%;
+  height:6.5rem;
+
 }
-.footer {
-  background-color: blueviolet;
-  grid-row-start: 6;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-button {
-  align-content: center;
-}
-.big-button {
-  align-content: center;
-  height: 5rem;
-}
+
