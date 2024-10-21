@@ -1,29 +1,24 @@
 #titulo_carteles {
   /*Poner una linea encima*/
-  color: #ece0dd;
-  text-align: left;
-  font-size: 5rem;
+  color: #000000;
+  text-align: center;
+  font-size: 7rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
   margin-bottom: 10px;
-  padding: 0.5rem;
+  margin-top: .5rem;
 }
 
+
 #lineas_carteles {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   height: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 #carteles_body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(142, 142, 247, 1) 50%,
-    rgba(0, 172, 207, 1) 100%
-  );
+  background-image: url(assets/fondoLOL2.jpg  );
 }
-
 
 .dropdown {
   position: absolute; /* Posiciona el contenedor del menú desplegable de forma relativa */
@@ -35,33 +30,31 @@
 }
 
 .menu {
-  /* Tipografía */
-  font-family: Arial, Helvetica, sans-serif; /* Define la fuente del menú */
-  font-weight: bold; /* Establece el texto en negrita */
-  font-size: 32px; /* Tamaño de la fuente */
-
   /* Colores */
-  background-color: #af88df; /* Establece el color de fondo para el menú */
-  color: rgb(0, 0, 0); /* Color del texto */
+  background-color: transparent; /* Establece el color de fondo para el menú */
 
   /* Espaciado */
   padding: 10px; /* Espaciado interno del botón */
 
   /* Dimensiones */
-  height: 3.5rem; /* Altura del botón */
-  width: 8rem; /* Ancho del botón */
+  height: 5rem; /* Altura del botón */
+  width: 5rem; /* Ancho del botón */
 
   /* Bordes */
-  border-radius: 10%; /* Bordes redondeados */
-  border: .2rem solid #16032c; /* Bordes del botón */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: .35rem solid #16032c; /* Bordes del botón */
 
   /* Posicionamiento */
   position: relative; /* Posiciona el botón de forma absoluta */
   top: 0%;
   left: 0%;
-
   /* Interactividad */
   cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+}
+.menu svg{
+  position: absolute;
+  top: -1%;
+  left: -3%;
 }
 
 .menu:hover {
@@ -123,15 +116,16 @@
 
 .search-container {
   position: absolute; /* Posiciona el contenedor de búsqueda */
-  top: 110px; /* Margen desde la parte superior */
-  right: 50px; /* Margen desde la derecha */
+  top: 3%; /* Margen desde la parte superior */
+  right: 0.5%; /* Margen desde la derecha */
+  
 }
 
 .search-input {
   padding: 10px; /* Espaciado interno */
-  border: 7px solid #16032c; /* Borde de la barra de búsqueda */
-  border-radius: 25px; /* Bordes redondeados */
-  width: 270px; /* Ancho de la barra de búsqueda */
+  border: 0.2rem solid #16032c; /* Borde de la barra de búsqueda */
+  border-radius: 0.3rem; /* Bordes redondeados */
+  width: 15rem; /* Ancho de la barra de búsqueda */
   background-color: #af88df;
 }
 
@@ -142,45 +136,62 @@
   font-size: 17px;
 }
 
-/* Estilo del contenedor de imágenes */
-#imagenes_desp {
-  /* Muestra los elementos hijos en una fila y los centra horizontalmente */
-  display: flex;
-  justify-content: center;
-  /* Establece el ancho y alto del contenedor */
-  width: 100%;
+/* Estilos para centrar el botón */
+.center-button {
+  position: absolute;
+  top: 60%;
+  left: 47rem;
+
 }
 
-/* Estilo de las imágenes dentro del contenedor */
-#imagenes_desp img {
-  /* Redondea los bordes de las imágenes */
-  border-radius: 60px;
-  /* Establece el ancho inicial de las imágenes en 0px */
-  width: 15rem;
-  /* Permite que las imágenes crezcan para ocupar el espacio disponible */
-  flex-grow: 1;
-  /* Ajusta el tamaño de las imágenes para que se adapten al contenedor */
-  object-fit: cover;
-  /* Establece la opacidad inicial de las imágenes en 3 (valor incorrecto, debería ser entre 0 y 1) */
-  opacity: 0.5;
-  /* Establece la duración y tipo de transición para los efectos de hover */
-  transition: 0.5s ease;
-
-  margin: 10px auto; /* Centra las imágenes y añade margen */
-
-  height: 500px; /* Mantiene la proporción de las imágenes */
-}
-
-/* Estilo de las imágenes al hacer hover */
-#imagenes_desp img:hover {
-  /* Cambia el cursor a una cruz de precisión */
-  cursor: crosshair;
-  /* Establece el ancho de las imágenes en 300px al hacer hover */
+/* Estilos para el botón grande */
+.big-button {
+  /* Dimensiones del botón */
   width: 40rem;
-  /* Establece la opacidad en 1 al hacer hover */
-  opacity: 1;
-  /* Aumenta el contraste de las imágenes en un 20% al hacer hover */
-  filter: contrast(120%);
+  height: 15rem;
 
+  /* Espaciado interno del botón */
+  padding: 20px 40px;
 
+  /* Estilo de texto */
+  font-family: fantasy; /* Tipo de fuente */
+
+  /* Colores */
+  background-color: #d00000; /* Color de fondo */
+  color: white; /* Color del texto */
+
+  /* Bordes */
+  border: none; /* Sin borde */
+  border-radius: 25px; /* Bordes redondeados */
+
+  /* Interacción */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+
+  /* Transiciones */
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 600%;
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Estilo del botón al pasar el ratón */
+.big-button:hover {
+  background-color: #07622d; /* Color de fondo al pasar el ratón */
+  /* Dimensiones del botón */
+  width: 40rem;
+  height: 15rem;
+  font-size: 750%;
+  transform: translate(-50%, -50%) scale(1.25);
+  transition: 0.3s;
+  transition-delay: 0.15s;
+}
+.big-button:not(hover) {
+  background-color: #d00000; /* Color de fondo al no pasar el ratón */
+  font-size: 600%;
+  transition: all 0.5s ease;
+  transition: 0.5s;
+  transition-delay: 0.15s;
 }
