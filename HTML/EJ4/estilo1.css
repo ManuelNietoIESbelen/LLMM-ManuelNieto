@@ -21,11 +21,13 @@ box-shadow: 2px 2px 2px 2px black;
 padding: 5px;
 width: 20%;
 margin-left: 3%;
+
 }
 li{
     color:rgb(136, 14, 14);
     list-style:circle;
     padding: 7%;
+    list-style-image: url(assets/documentos/carpeta.gif);
 }
 a{
     font-weight: bold;
@@ -42,6 +44,7 @@ a:hover{
 #documento{
     color: white;
     text-decoration: underline;
+   
 }
 #documento:hover{
     color: yellow;

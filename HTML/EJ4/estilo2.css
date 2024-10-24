@@ -1,7 +1,8 @@
-body{
-     background-color: lightyellow;
+body {
+    background-color: lightyellow;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,12 +11,39 @@ h1{
     margin-right: 8%;
     background-color: black;
 }
-nav{
+
+nav {
     overflow: hidden;
+    background-color: rgb(223, 223, 223);
+    border: 2px solid black;
 
 }
-nav ul{
-    list-style: none;
-    list-style-type: circle;
+
+nav li{
+
+    font-family: Arial, Helvetica, sans-serif;
     display: inline;
+    margin: 0 10px 0 10px ;
+    font-weight: bold;
+    color: black;
+}
+
+
+a {
+    padding: 16px;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 16px;
+    background-color: red;
+    color: white;
 }
