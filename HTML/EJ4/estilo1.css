@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(235, 235, 235);
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-bottom: 3px solid  blue;
+    border-top: 3px solid  blue;
+    background-color: white;
+
+}
+#menu{
+background-color: rgb(236, 167, 167);
+border: 3px solid rgb(136, 14, 14);
+border-radius: 25px;
+box-shadow: 2px 2px 2px 2px black;
+padding: 5px;
+width: 20%;
+margin-left: 3%;
+}
+li{
+    color:rgb(136, 14, 14);
+    list-style:circle;
+    padding: 7%;
+}
+a{
+    font-weight: bold;
+    font-size: 20px;
+
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+
+#documento{
+    color: white;
+    text-decoration: underline;
+}
+#documento:hover{
+    color: yellow;
+}
