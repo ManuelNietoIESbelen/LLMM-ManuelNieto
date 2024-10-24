@@ -8,10 +8,15 @@ h2{
     margin: 0.8rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-p{
+#crear_cuenta{
     margin-top: 6.5rem;
     margin-left: 3rem;
-}   
+}
+#olvidar_contraseña{
+    margin-top: -.5rem;
+    margin-left: 1rem;
+}
+
 
 
 /* Estilos para el contenedor de login */
@@ -31,7 +36,7 @@ p{
     /* Posición absoluta para centrar el contenedor */
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
   }
   
