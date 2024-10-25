@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="CSS.css" rel="stylesheet" type="text/css" />
+    <link href="03_contactosCSS.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header id="encabezado">
-        
 
+        <div class="auth-buttons">
+            <a href="04_signon.html"><button class="auth-button">Iniciar Sesión</button></a>
+            <a href="04_signup.html"><button class="auth-button">Crear Cuenta</button></a>
+        </div>
         <!-- Barra de búsqueda -->
         <div class="search-container">
             <input type="text" placeholder="Buscar..." class="search-input">
@@ -20,25 +23,67 @@
         <!-- Menú desplegable -->
         <div class="dropdown">
             <!-- Botón que activa el menú desplegable -->
-            <button class="menu">Menu</button>
+            <button class="menu"><svg xmlns="http://www.w3.org/2000/svg" width="4.5rem" height="4.5rem"
+                    viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2">
+                        <path stroke-dasharray="16" stroke-dashoffset="16" d="M4.5 21.5h15">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="16;0" />
+                        </path>
+                        <path stroke-dasharray="16" stroke-dashoffset="16" d="M4.5 21.5v-13.5M19.5 21.5v-13.5">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s"
+                                values="16;0" />
+                        </path>
+                        <path stroke-dasharray="28" stroke-dashoffset="28" d="M2 10l10 -8l10 8">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s"
+                                values="28;0" />
+                        </path>
+                        <path stroke-dasharray="24" stroke-dashoffset="24" d="M9.5 21.5v-9h5v9">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s"
+                                values="24;0" />
+                        </path>
+                    </g>
+                </svg></button>
 
             <!-- Contenido del menú desplegable -->
             <div class="dropdown-child">
                 <div class="dropdown-child1">
-                    <b><a href="01_indexP.html">Página Principal</a></b>
+                    <b><a href="01_index.html">Página Principal</a></b>
                 </div>
                 <div class="dropdown-child2">
 
-                    <b><a href="02_cartelesP.html">Colecciones</a></b>
+                    <b><a href="02_carteles.html">Colecciones</a></b>
                 </div>
                 <div class="dropdown-child3">
 
                     <b><a href="03_contactoP.html">Contactos</a></b>
                 </div>
-
             </div>
         </div>
     </header>
+    <section class="redes-sociales">
+        <div class="tarjeta" id="facebook">
+            <h2>Facebook</h2>
+            <img src="assets/facebook.png">
+            <a href="https://facebook.com/tuMarca" target="_blank">Síguenos</a>
+        </div>
+        <div class="tarjeta" id="instagram">
+            <h2>Instagram</h2>
+            <img src="assets/instagram.png">
+            <a href="https://instagram.com/tuMarca" target="_blank">Síguenos</a>
+        </div>
+        <div class="tarjeta" id="youtube">
+            <h2>youtube</h2>
+            <img src="assets/x.jpg">
+            <a href="https://instagram.com/tuMarca" target="_blank">Síguenos</a>
+        </div>
+        <div class="tarjeta" id="X">
+            <h2>X</h2>
+            <img src="assets/x.jpg">
+            <a href="https://instagram.com/tuMarca" target="_blank">Síguenos</a>
+        </div>
+
+    </section>
 </body>
 
 </html>

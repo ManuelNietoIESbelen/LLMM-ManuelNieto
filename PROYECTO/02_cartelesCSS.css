@@ -184,3 +184,25 @@
 
 
 }
+/* Estilos para los botones de autenticación */
+.auth-buttons {
+  position: absolute;
+  top: 35px;
+  right: 15%;
+}
+
+.auth-button {
+  
+  background-color: #000000; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 10px; /* Espacio entre los botones */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover{
+ background-color: red;
+}

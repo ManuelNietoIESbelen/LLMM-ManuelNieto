@@ -12,9 +12,17 @@ h2{
     margin-top: 6.5rem;
     margin-left: 3rem;
 }
-#olvidar_contraseña{
+#crear_cuenta a:hover{
+  color: white;
+}
+#olvidar_contrasena{
     margin-top: -.5rem;
     margin-left: 1rem;
+    text-decoration: none;
+}
+
+#olvidar_contrasena a:hover{
+  color: rgb(255, 255, 255);
 }
 
 

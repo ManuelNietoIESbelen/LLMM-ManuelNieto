@@ -1,0 +1,196 @@
+body{
+    background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
+}
+.dropdown {
+    position: absolute; /* Posiciona el contenedor del menú desplegable de forma relativa */
+    top: 2%; /* Distancia desde la parte superior de su contenedor */
+    left: 0.5%; /* Distancia desde la izquierda de su contenedor */
+    z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+    display: inline-table; /* Permite que el elemento se muestre en línea manteniendo su tamaño */
+     
+  }
+  
+  .menu {
+    /* Colores */
+    background-color: transparent; /* Establece el color de fondo para el menú */
+  
+    /* Espaciado */
+    padding: 10px; /* Espaciado interno del botón */
+  
+    /* Dimensiones */
+    height: 5rem; /* Altura del botón */
+    width: 5rem; /* Ancho del botón */
+  
+    /* Bordes */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: .35rem solid #000000; /* Bordes del botón */
+  
+    /* Posicionamiento */
+    position: relative; /* Posiciona el botón de forma absoluta */
+    top: 0%;
+    left: 0%;
+    /* Interactividad */
+    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  }
+  .menu svg{
+    position: absolute;
+    top: -1%;
+    left: -3%;
+  }
+  
+  .menu:hover {
+    background-color: rgb(
+      255,
+      255,
+      255
+    ); /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  
+  
+  
+  /* Estilo del menú desplegable cuando está oculto */
+  .dropdown-child {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif; /* Fuente del menú desplegable */
+    background-color: "af88df"; /* Color de fondo del menú desplegable */
+    display: none; /* Oculta el menú por defecto */
+    min-width: 300px; /* Ancho mínimo del menú desplegable */
+    position: relative; /* Posiciona el menú desplegable de forma absoluta */
+    z-index: 1; /* Asegura que el menú desplegable esté por encima de otros elementos */
+    border-radius: 15px;
+  }
+  .dropdown-child1:hover {
+    background-color: rgb(
+      215,
+      0,
+      0
+    ); /* Cambia el color de fondo al pasar el ratón por encima */
+    border-radius: 15px;
+  }
+  .dropdown-child2:hover {
+    background-color: rgb(
+      215,
+      0,
+      0
+    ); /* Cambia el color de fondo al pasar el ratón por encima */
+    border-radius: 15px;
+  }
+  .dropdown-child3:hover {
+    background-color: rgb(
+      215,
+      0,
+      0
+    ); /* Cambia el color de fondo al pasar el ratón por encima */
+    border-radius: 15px;
+  }
+  
+  .dropdown-child a {
+    color: white; /* Color del texto de los enlaces en el menú desplegable */
+    padding: 10px; /* Espaciado interno de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  }
+  
+  .dropdown:hover .dropdown-child {
+    display: block; /* Muestra el menú desplegable al pasar el ratón por encima del contenedor */
+  }
+  .search-container {
+    position: absolute; /* Posiciona el contenedor de búsqueda */
+    top: 3%; /* Margen desde la parte superior */
+    right: 0.5%; /* Margen desde la derecha */
+    border: 2px solid white;
+    border-radius: 0.3rem;
+    
+  }
+  
+  .search-input {
+    padding: 10px; /* Espaciado interno */
+    
+     /* Bordes redondeados */
+    width: 15rem; /* Ancho de la barra de búsqueda */
+    background-color: #000000;
+  }
+  
+  /* Estilo para el placeholder(palabra dentro de la barra de búsqueda) */
+  .search-input::placeholder {
+    color: #ffffff;
+    opacity: 1; /* Asegúrate de que la opacidad esté en 1 para que sea completamente visible */
+    font-size: 17px;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tarjeta {
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 30px;
+    width: 300px;
+    margin-top: 150px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta h2 {
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.tarjeta img{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+.tarjeta a {
+    
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
+    padding: 10px 80px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para las tarjetas */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta a:hover {
+    background-color: #357ABD;
+}
+/* Estilos para los botones de autenticación */
+.auth-buttons {
+    position: absolute;
+    top: 35px;
+    right: 15%;
+  }
+  
+  .auth-button {
+    
+    background-color: #000000; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px; /* Espacio entre los botones */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:hover{
+   background-color: red;
+  }
