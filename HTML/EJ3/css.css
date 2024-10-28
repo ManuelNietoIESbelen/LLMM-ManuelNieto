@@ -14,7 +14,7 @@ body{
 }
 #dp{
     background-color: rgb(240, 169, 169);
-    border: 3px solid red;
+    border: 3px solid;
     border-radius: .5rem;
     color: rgb(168, 59, 59);
     margin: 2rem;
@@ -24,7 +24,7 @@ body{
 }
 #fa{
     background-color: rgb(149, 201, 235);
-    border: 3px solid rgb(36, 17, 143);
+    border: 3px solid;
     border-radius: .5rem;
     border-style: dotted;
     color: rgb(53, 53, 235);
@@ -40,8 +40,8 @@ h1{
     color: darkblue;
     text-align: center;
     background-color: white;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 5px solid ;
+    border-bottom: 5px solid;
     border-color:  darkblue;
     margin-top: 20px;
     margin-bottom: 20px;

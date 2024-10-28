@@ -23,7 +23,7 @@ nav li{
 
     font-family: Arial, Helvetica, sans-serif;
     display: inline;
-    margin: 0 10px 0 10px ;
+    margin: 0 -10px 0 10px ;
     font-weight: bold;
     color: black;
 }
@@ -38,9 +38,6 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
 
 a:hover {
     padding: 16px;
