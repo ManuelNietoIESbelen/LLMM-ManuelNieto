@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(189, 206, 212);
+}
+header{
+    text-align: center;
+    color: red;
+}
+header img{
+    width: 100%;
+}
+#honda1{
+    text-align: justify;
+}
+#honda1 img{
+float: right;
+width: 16%;
+padding:5px;
+}
+
+#honda2{
+    text-align: justify;
+}
+
+#honda2 img{
+    float: left;
+    width: 14%;
+    padding: 5px;
+}
+h2{
+   text-align: right;
+    color: blue;
+    margin-bottom: 0px;
+}
+hr{
+    margin-top:none;
+    border-color: blue;
+    color: blue;
+}
+
+ #caracteristicas div{
+    background-color: rgb(233, 233, 139);
+    border: 2px dotted black;
+    padding: 5px;
+    width: 50%;
+    margin: 20px 0px 20px 30px;
+}
+
+#presupuesto div{
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    padding: 3px;
+    margin-top: 20px ;
+}
+
