@@ -1,6 +1,7 @@
 body{
     background-color: rgb(197, 239, 255);
     font-family: 'Times New Roman', Times, serif;
+    
 }
 header{
     text-align: center;
@@ -34,8 +35,10 @@ padding:5px;
 h2{
    text-align: right;
     color: blue;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
+   border-bottom: solid 3px blue;
+   
 }
 hr{
     margin-top:none;
@@ -64,10 +67,13 @@ hr{
     margin-top: 20px ;
     font-weight: bold;
 }
+#fotografias div{
+   width: 100%;
+}
 
 #fotografias div{
-    position: relative;
-    left: 35%;
+    text-align: center;
+
 }
 #presupuesto span{
     color:red;
