@@ -1,35 +1,41 @@
 body{
-    background-color: rgb(189, 206, 212);
+    background-color: rgb(197, 239, 255);
+    font-family: 'Times New Roman', Times, serif;
 }
 header{
     text-align: center;
     color: red;
+    font-family: Georgia;
+    font-weight: bold;
 }
 header img{
     width: 100%;
 }
 #honda1{
     text-align: justify;
+    padding: 10px;
 }
 #honda1 img{
 float: right;
-width: 16%;
+width: 150px;
 padding:5px;
 }
 
 #honda2{
     text-align: justify;
+    padding: 10px;
 }
 
 #honda2 img{
     float: left;
-    width: 14%;
+    width: 150px;
     padding: 5px;
 }
 h2{
    text-align: right;
     color: blue;
     margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 hr{
     margin-top:none;
@@ -40,9 +46,14 @@ hr{
  #caracteristicas div{
     background-color: rgb(233, 233, 139);
     border: 2px dotted black;
-    padding: 5px;
-    width: 50%;
-    margin: 20px 0px 20px 30px;
+    padding: 20px 50px 20px 50px;
+    width: 40%;
+    margin: 20px 0px 20px 50px;
+
+}
+#caracteristicas div ol{
+    font-size: 14px;
+    color: blue;
 }
 
 #presupuesto div{
@@ -51,5 +62,20 @@ hr{
     background-color: white;
     padding: 3px;
     margin-top: 20px ;
+    font-weight: bold;
 }
 
+#fotografias div{
+    position: relative;
+    left: 35%;
+}
+#presupuesto span{
+    color:red;
+}
+#fotografias a{
+text-decoration: none;
+}
+#fotografias a:hover{
+    text-decoration: underline;
+    color: red;
+    }
