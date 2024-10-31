@@ -1,0 +1,44 @@
+body{
+background-color: rgb(15, 0, 15);
+}
+#msk_title{
+    position: sticky;
+    top:0px;
+    text-align: center;
+    color: black;
+    background-color: black;
+    width: 100%;
+    font-weight: bold;
+    transition: 1s;
+    font-size: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#msk_title:hover{
+    color: white;
+    transition-duration: 2s;
+}
+p{
+    color: white;
+}
+#msk_title2{
+    position: sticky;
+    bottom: 0px;
+    text-align: center;
+    color: black;
+    background-color: black;
+    width: 100%;
+    font-weight: bold;
+    transition: 1s;
+    font-size: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#msk_title2:hover{
+    color: white;
+    transition-duration: 2s;
+}
