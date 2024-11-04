@@ -129,8 +129,9 @@ body{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 15px;
-    padding: 30px;
+    padding: 50px;
     width: 300px;
+    height: 450px;
     margin-top: 150px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -154,13 +155,13 @@ body{
 
 
 .tarjeta a {
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: #fff;
     background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
     padding: 10px 80px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    
 }
 
 /* Efecto hover para las tarjetas */
@@ -170,7 +171,9 @@ body{
 }
 
 .tarjeta a:hover {
-    background-color: #357ABD;
+    color: black;
+    font-size: 25px;
+    transition: .3s;
 }
 /* Estilos para los botones de autenticación */
 .auth-buttons {
