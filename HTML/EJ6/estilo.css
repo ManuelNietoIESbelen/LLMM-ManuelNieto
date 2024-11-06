@@ -8,6 +8,7 @@ table{
     border-collapse: collapse;
     border: solid 1px gray;
     margin: auto;
+    margin-bottom:80px ;
 }
 th{
     color: rgb(168, 168, 42);
@@ -31,4 +32,31 @@ caption{
     color: green;
     text-align: center;
     font-size: 36px;
+}
+
+.tableSubirNota{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    color: gray;
+    
+}
+
+.tableSubirNota caption{
+color: blue;
+
+}
+.tableSubirNota th{
+    color:white;
+    background-color: rgb(29, 182, 233);
+    padding: 7px;
+}
+.headerRojo{
+background-color: rgb(245, 85, 37);
+color: white;
+padding: 7px;
+}
+.izq{
+    background-color: rgb(221, 173, 15);
+    color: white;
+    font-size: 15px;
 }
