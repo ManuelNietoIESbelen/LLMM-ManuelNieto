@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <section>
+        <form id="form1" action="">
+            <fieldset>
+                <legend>Detalles personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Pon tu nombre" size="100">
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" />
+                </div>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Información del comentario</legend>
+
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Pon un usuario" required size="60">
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required size="60" />
+                </div>
+                <div>
+                    <label for="comment">Comentario:</label>
+                    <input type="text" id="comment" name="comment" placeholder="Pon un comentario" size="100" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Pon tu email" maxlength="70" size="100" />
+                </div>
+                <div>
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" id="date" name="date" size="100" />
+                </div>
+                <div>
+                    <label for="file">Introduce un fichero:</label>
+                    <input type="file" id="file" name="file" />
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Borrar" />
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <h1>Ejercicio 2</h1>
+        <form id="">
+            <div>
+                <label for="usuario">Nombre</label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+            <div>
+                <label for="comment">Comentario:</label>
+                <textarea rows="10" cols="35" id="comment" name="comment" maxlength="100"></textarea>
+            </div>
+            <div>
+                <label for="color">Seleccione el color de su avatar</label>
+                <input type="color" id="color" name="color" />
+            </div>
+            <div>
+                <input type="submit" value="Enviar comentario" />
+            </div>
+        </form>
+        <h1>Ejercicio 3</h1>
+        <form>
+            <div>
+                <label for="food">Elige tu comida favorita:</label>
+                <select type="" id="food" name="food">
+                    <optgroup label="Principales">
+                        <option>Ensalada</option>
+                        <option>kebab</option>
+                    </optgroup>
+                    <optgroup label="Aperitivos">
+                        <option>Patatas</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </div>
+        </form>
+    </section>
+    <section>
+        <h1>Ejercicio 4</h1>
+        <form>
+            <div>
+                <label for="food2">Elige tu comida favorita:</label>
+                <input type="checkbox" id="food2" name="food2">
+                <label for="food2">Kebab</label>
+                <input type="checkbox" id="food2" name="food2">
+                <label for="food2">Ensalada</label>
+                <input type="checkbox" id="food2" name="food2">
+                <label for="food2">Hamburguesa</label>
+                <input type="checkbox" id="food2" name="food2">
+                <label for="food2">Pizza</label>
+            </div>
+            <div>
+                <label for="pay">Método de pago:</label>
+                <input type="radio" id="pay" name="pay">
+                <label for="pay">Vale</label>
+                <input type="radio" id="pay" name="pay">
+                <label for="pay">Tarjeta</label>
+                <input type="radio" id="pay" name="pay">
+                <label for="pay">CASH</label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
