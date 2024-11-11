@@ -1,0 +1,39 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+    padding: 10px;
+}
+fieldset{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+form textarea{
+    background-color: rgb(237, 250, 180);
+}
+input{
+    background-color: rgb(237, 250, 180);
+    border: 2px solid black;
+    padding: 3px;
+
+}
+label{
+    padding: 3px;
+    color: rgb(83, 83, 83);
+}
+form{
+    margin: 10px 0 10px 0;
+}
+#form3{
+    float: inline-start;
+    padding: 3px;
+}
+#form4{
+    float:inline-start;
+    padding: 3px;
+div{
+margin: 10px 0 10px 0;
+}
+}
+h1{
+color: rgb(112, 81, 24);
+}

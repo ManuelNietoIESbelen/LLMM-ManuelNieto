@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
     <title>Ejercicio 7</title>
 </head>
 
 <body>
-    <h1>Ejercicio 1</h1>
     <section>
+        <h1>Ejercicio 1</h1>
         <form id="form1" action="">
             <fieldset>
                 <legend>Detalles personales</legend>
@@ -77,8 +78,10 @@
                 <input type="submit" value="Enviar comentario" />
             </div>
         </form>
+    </section>
+    <section id="form3">
         <h1>Ejercicio 3</h1>
-        <form>
+        <form >
             <div>
                 <label for="food">Elige tu comida favorita:</label>
                 <select type="" id="food" name="food">
@@ -97,28 +100,23 @@
             </div>
         </form>
     </section>
-    <section>
+    <section id="form4">
         <h1>Ejercicio 4</h1>
         <form>
-            <div>
                 <label for="food2">Elige tu comida favorita:</label>
-                <input type="checkbox" id="food2" name="food2">
-                <label for="food2">Kebab</label>
-                <input type="checkbox" id="food2" name="food2">
-                <label for="food2">Ensalada</label>
-                <input type="checkbox" id="food2" name="food2">
-                <label for="food2">Hamburguesa</label>
-                <input type="checkbox" id="food2" name="food2">
-                <label for="food2">Pizza</label>
+                <input type="checkbox" id="food2" name="food2" checked value="kebab">kebab</input>
+                <input type="checkbox" id="food2" name="food2" value="ensalada">
+                Ensalada</input>
+                <input type="checkbox" id="food2" name="food2" value="hamburguesa">Hamburguesa</input>
+                <input type="checkbox" id="food2" name="food2" value="pizza">Pizza</input>
             </div>
-            <div>
                 <label for="pay">Método de pago:</label>
-                <input type="radio" id="pay" name="pay">
-                <label for="pay">Vale</label>
-                <input type="radio" id="pay" name="pay">
-                <label for="pay">Tarjeta</label>
-                <input type="radio" id="pay" name="pay">
-                <label for="pay">CASH</label>
+                <input type="radio" id="pay" name="pay" value="vale">
+                Vale</input>
+                <input type="radio" id="pay" name="pay" value="tarjeta">
+                Tarjeta</input>
+                <input type="radio" id="pay" name="pay" value="cash">
+                CASH</input>
             </div>
             <div>
                 <input type="submit" value="Enviar" />
