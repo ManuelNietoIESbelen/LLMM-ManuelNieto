@@ -1,0 +1,52 @@
+h1{
+text-align: center;
+background-color: orange;
+}
+
+body {
+    background-color: #ffffff; 
+    font-family: Arial, sans-serif;
+    color: #000; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+input{
+margin: 0px 20px 0 50px;
+width: 200px;
+}
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 50%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+   
+}
+.form-container {
+    background-color: #ffcc99;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+label[for="direccion"],label[for="nombre"],label[for="edad"],label[for=comentarios],label[for=tarjeta],label[for=ingredientes],label[for=tamanyo]{
+    width: 80px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+    padding: 5px 20px 5px 20px; 
+    text-align: center;
+}

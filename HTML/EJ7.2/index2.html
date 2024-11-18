@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+
+            <h1>Pedido de Pizza</h1>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div id="tabla">
+            <table>
+                <tr>
+                    <th><label for="ingredientes">Ingredientes</label></th>
+                    <th><label for="tamanyo">Tamaño</label></th>
+                    <th><label for="tarjeta">Forma de pago</label></th>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="radio" name="ingredientes" value="queso"> queso</label>
+                        <label><input type="radio" name="ingredientes" value="cebolla"> cebolla</label>
+                        <label><input type="radio" name="ingredientes" value="pimiento"> pimiento</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="tamano" value="pequena"> Pequeña</label>
+                        <label><input type="checkbox" name="tamano" value="mediana"> Mediana</label>
+                        <label><input type="checkbox" name="tamano" value="grande"> Grande</label>
+
+                    </td>
+                    <td>
+
+                        <select id="tarjeta" name="tarjeta">
+                            <option value="visa">visa</option>
+                            <option value="mastercard">mastercard</option>
+                            <option value="amex">amex</option>
+                        </select>
+
+                    </td>
+                </tr>
+            </table>
+          </div>
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
