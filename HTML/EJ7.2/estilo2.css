@@ -50,3 +50,7 @@ label[for="direccion"],label[for="nombre"],label[for="edad"],label[for=comentari
     padding: 5px 20px 5px 20px; 
     text-align: center;
 }
+
+#comentarios{
+    display: block;
+}
