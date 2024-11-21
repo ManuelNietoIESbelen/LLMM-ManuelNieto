@@ -13,11 +13,58 @@ body {
     align-items: center;
     padding: 80px;
 }
+label{
+background-color: brown;
+color: white;
+padding: 8px;
 
-input{
-margin: 0px 20px 0 50px;
-width: 200px;
 }
+.div1{
+  
+}
+.div2{
+display: block;
+margin: 30px;
+}
+
+.etiquetas{
+   display: inline-block;
+}
+.etiquetas2{
+ margin: 30px;
+}
+
+.ingredientes{
+   float: inline-start;
+   
+   
+}
+.tamanyo{
+    float: inline-start;
+   
+
+}
+.tarjeta{
+    float: inline-start ;
+    
+
+}
+.comentarios{
+    clear: both;
+    margin: 30px;
+}
+.comentarios label{
+    display: block;
+    text-align: center;
+}
+textarea{
+    display: block;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
 input[type="text"],
 input[type="number"],
 textarea,
@@ -38,19 +85,8 @@ select {
     border: 2px solid #000000;
     border-radius: 10px;
     width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-}
-label[for="direccion"],label[for="nombre"],label[for="edad"],label[for=comentarios],label[for=tarjeta],label[for=ingredientes],label[for=tamanyo]{
-    width: 80px;
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
-    background-color: brown;
-    padding: 5px 20px 5px 20px; 
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
 }
 
-#comentarios{
-    display: block;
-}
+
+
