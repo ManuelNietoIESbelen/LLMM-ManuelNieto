@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="examen" content="width=device-width, initial-scale=1.0">
+    <link href="/EXAMEN_T2/assets/CSS/estilo_contacto.css" rel="stylesheet" type="text/css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>CONTACTA CON NOSOTROS</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" >Principal</a></li>
+            <li><a href="destino1.html" >destino1</a></li>
+            <li><a href="destino2.html" >destino2</a></li>
+            <li><a href="contacto.html" >Contacto</a></li>
+        </ul>
+    </nav>
+    <form>
+        <fieldset>
+            <h1>Contacto</h1>
+            <div>
+                <label class="label" for="email">Email</label>
+                <input class="input" type="text" id="eamil" name="email"  placeholder="Ingrese su email" required>
+            </div>
+
+
+            <div>
+                <label class="label" for="password">contraseña</label>
+                <input class="input" type="password" id="password" name="password"  placeholder="Introduce una contraseña" required>
+            </div>
+            <div>
+                <label class="label" for="nombre">Nombre</label>
+                <input class="input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label class="label" for="color">Color preferido</label>
+                <input class="input_color" type="color" id="color" name="color" />
+            </div>
+            <div>
+                <label class="label" for="web">Web</label>
+                <input class="input_web_tel" type="text" id="web" name="web" required>
+            </div>
+            <div>
+                <label class="label" for="tel">Telefono:</label>
+                <input class="input_web_tel" type="text" id="tel" name="teb" required>
+            </div>
+            <div>
+                <label class="label" for="date">Fecha de nacimiento</label>
+                <input class="input" type="date" id="date" name="date" size="100" />
+            </div>
+            <div>
+                <label class="label">Transporte</label>
+                <label><input type="checkbox" name="transporte" value="coche">Coche</label>
+                <label><input type="checkbox" name="transporte" value="barco"> Barco</label>
+                <label><input type="checkbox" name="transporte" value="tren" checked value="tren"> Tren</label>
+                <label><input type="checkbox" name="transporte" value="avion"> Avion</label>
+            </div>
+            <div class="guia_pago">
+                <div>
+                    <label class="label">Opcion a Guia</label>
+                    <label><input type="radio" name="guia" value="si" checked value="si"> Si</label>
+                    <label><input type="radio" name="guia" value="no"> No</label>
+                </div>
+
+                <div>
+                    <label class="label" for="tarjeta">Forma de Pago</label>
+                    <select id="tarjeta" name="tarjeta">
+                        <option value="mastercard" >mastercard</option>
+                        <option value="alcontado">Al contado</option>
+                        <option value="visa">visa</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Darme de alta</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
