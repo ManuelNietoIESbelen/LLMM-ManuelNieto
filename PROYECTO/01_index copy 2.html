@@ -11,6 +11,7 @@
 <!-- Cuerpo de la página -->
 
 <body>
+
     <body>
         <header>
             <div class="menu">
@@ -27,7 +28,7 @@
                 <button>Search</button>
             </div>
         </header>
-    
+
         <main>
             <h1>MSK DEVELOP</h1>
             <div class="carousel">
@@ -36,20 +37,58 @@
                 <img src="./assets/imagenes/rapper.jpeg" alt="Image 3">
             </div>
         </main>
-    
+        <section>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+            <div class="bloques">
+                <img src="./assets/imagenes/pajaro.png">
+            </div>
+        </section>
+
         <footer>
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p>&copy; 2024 MSK DEVELOP. By Manuel Ángel Nieto Jiménez</p>
         </footer>
-    
+
         <script>
             let currentIndex = 0;
             const images = document.querySelectorAll('.carousel img');
-    
+
             setInterval(() => {
                 images[currentIndex].classList.remove('active');
                 currentIndex = (currentIndex + 1) % images.length;
                 images[currentIndex].classList.add('active');
-            }, 3000);
+            }, 2000);
         </script>
 
 </html>

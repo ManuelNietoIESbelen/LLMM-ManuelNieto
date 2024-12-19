@@ -6,7 +6,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #212529;
+  background-image: url(../PROYECTO/assets/imagenes/fondo.jpg);
 }
 header {
   display: flex;
@@ -24,7 +24,7 @@ header {
 .menu-items {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 0;
   background-color: #444;
   border: 1px solid #555;
@@ -33,6 +33,7 @@ header {
   
 }
 .menu-items a {
+  font-size: 18px;
   display: block;
   padding: 10px;
   color: white;
@@ -93,10 +94,41 @@ h1 {
 .carousel img.active {
   display: block;
 }
+
+section{
+  display: flex;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+   
+    
+}
+
+section div{
+width: 20%;
+padding: 20px;
+background-color: rgb(167, 143, 100);
+margin: 15px;
+border-radius: 7%;
+}
+.bloques:hover{
+  border: #ccc solid 2px;
+  transition: 0.5s;
+}
+
+img{
+  padding: 15px;
+  width: 100%;
+  border-radius: 10%; 
+}
+
+
+
 footer {
   margin-top: 20px;
   padding: 10px;
   background-color: #333;
-  color: white;
+  color: rgb(146, 146, 146);
   text-align: center;
 }
