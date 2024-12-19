@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link href="01_indexCSS copy 2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Cuerpo de la página -->
+
+<body>
+    <body>
+        <header>
+            <div class="menu">
+                &#9776; Menu
+                <div class="menu-items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </header>
+    
+        <main>
+            <h1>MSK DEVELOP</h1>
+            <div class="carousel">
+                <img src="./assets/imagenes/pibeprogramando.jpg" alt="Image 1" class="active">
+                <img src="./assets/imagenes/airforce.jpg" alt="Image 2">
+                <img src="./assets/imagenes/rapper.jpeg" alt="Image 3">
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel img');
+    
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }, 3000);
+        </script>
+
+</html>

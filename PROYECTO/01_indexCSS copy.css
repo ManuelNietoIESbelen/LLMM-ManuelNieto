@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  grid-template-columns: .5fr 1fr 4fr;
+  grid-template-rows: 0.3fr 4fr;
+  height: 100vh;;
+}
+
+header {
+  grid-column: 2 / 4;
+  text-align: left;
+  background-color: #212529;
+
+}
+
+header h1{
+  font-size: 50px;
+  color: white;
+}
+
+.carrusel1{
+  max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el carrusel */
+background-image: url(../PROYECTO/assets/imagenes/bck.jpeg);
+}
+
+
+.carrusel img{
+  width: 30%;
+}
+.navegacion {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+  background-color: #212529;
+
+}
+
+#section{
+  grid-column: 1/ 4;
+  grid-row: 2/3;
+  background-color: #444b52;
+
+}
+
+
+.textoMuteado{
+  color: gray;
+}
+
+
