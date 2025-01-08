@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -16,16 +18,19 @@ header {
   background-color: #333;
   color: white;
   height: 8vh;
+ 
 }
 .menu {
   position: relative;
   cursor: pointer;
+  background-color: #333; 
+  padding: 10px;
+  
 }
 .menu-items {
   display: none;
   position: absolute;
-  top: 30px;
-  left: 0;
+  z-index: 1000;
   background-color: #444;
   border: 1px solid #555;
   border-radius: 4px;
@@ -41,11 +46,19 @@ header {
 }
 .menu-items a:hover {
   background-color: #555;
-
 }
-.menu:hover .menu-items {
-  display: block;
-  transition: .5s;
+
+button, .menu-items a {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.menu:hover{
+  background-color: #777;
+  
+}
+
+.menu-items.active {
+  display: block; /* Mostrar cuando se activa con JavaScript */
 }
 .search-bar {
   display: flex;
@@ -79,6 +92,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 50px;
   color: white;
+  
 }
 .carousel {
   position: relative;
@@ -112,6 +126,13 @@ background-color: rgb(167, 143, 100);
 margin: 15px;
 border-radius: 7%;
 }
+
+.bloques {
+  display: inline-block;
+  margin: 10px;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+}
+
 .bloques:hover{
   border: #ccc solid 2px;
   transition: 0.5s;

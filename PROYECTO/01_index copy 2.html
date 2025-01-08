@@ -1,94 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Principal</title>
-    <link href="01_indexCSS copy 2.css" rel="stylesheet" type="text/css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página Principal</title> <link rel="icon" type="image/png" href="./assets/imagenes/pingu.jpeg">
+        <link href="01_indexCSS copy 2.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<!-- Cuerpo de la página -->
-
-<body>
+    <!-- Cuerpo de la página -->
 
     <body>
-        <header>
-            <div class="menu">
-                &#9776; Menu
-                <div class="menu-items">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+        <body>
+            <header>
+                <div class="menu">
+                    &#9776; Menu
+                    <div class="menu-items">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-            </div>
-        </header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </header>
 
-        <main>
-            <h1>MSK DEVELOP</h1>
-            <div class="carousel">
-                <img src="./assets/imagenes/pibeprogramando.jpg" alt="Image 1" class="active">
-                <img src="./assets/imagenes/airforce.jpg" alt="Image 2">
-                <img src="./assets/imagenes/rapper.jpeg" alt="Image 3">
-            </div>
-        </main>
-        <section>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-            <div class="bloques">
-                <img src="./assets/imagenes/pajaro.png">
-            </div>
-        </section>
+            <main>
+                <h1>MSK DEVELOP</h1>
+                <div class="carousel">
+                    <img src="./assets/imagenes/pibeprogramando.jpg" alt="Image 1" class="active">
+                    <img src="./assets/imagenes/airforce.jpg" alt="Image 2">
+                    <img src="./assets/imagenes/rapper.jpeg" alt="Image 3">
+                </div>
+            </main>
+            <section>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+                <div class="bloques">
+                    <img src="./assets/imagenes/pajaro.png" loading="lazy">
+                </div>
+            </section>
+            
+            <footer>
+                <p>&copy; 2024 MSK DEVELOP. By Manuel Ángel Nieto Jiménez</p>
+            </footer>
 
-        <footer>
-            <p>&copy; 2024 MSK DEVELOP. By Manuel Ángel Nieto Jiménez</p>
-        </footer>
+            <script>
+                let currentIndex = 0;
+                const images = document.querySelectorAll('.carousel img');
 
-        <script>
-            let currentIndex = 0;
-            const images = document.querySelectorAll('.carousel img');
+                setInterval(() => {
+                    images[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].classList.add('active');
+                }, 2000);
 
-            setInterval(() => {
-                images[currentIndex].classList.remove('active');
-                currentIndex = (currentIndex + 1) % images.length;
-                images[currentIndex].classList.add('active');
-            }, 2000);
-        </script>
 
-</html>
+                const menu = document.querySelector('.menu');
+                const menuItems = document.querySelector('.menu-items');
+
+                menu.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Evitar que el clic se propague
+                    menuItems.classList.toggle('active'); // Alternar la clase 'active'
+                });
+
+                // Cerrar el menú si se hace clic fuera de él
+                window.addEventListener('click', () => {
+                    menuItems.classList.remove('active');
+                }); 
+            </script>
+
+    </html>
