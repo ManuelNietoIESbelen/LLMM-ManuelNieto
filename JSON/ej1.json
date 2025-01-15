@@ -1,0 +1,9 @@
+{"nombre":"Google",
+"datos":{
+    "direccion":"Calle Lauria 123", 
+    "telefono":"1234567890",
+    "email":"info@google.com"
+},
+"numeroEmpleados":200,
+"deudas":true
+}

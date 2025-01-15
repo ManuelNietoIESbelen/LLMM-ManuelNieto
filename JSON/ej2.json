@@ -1,0 +1,18 @@
+{"numEstudiantes":{
+    "primaria":200,
+    "secundaria":300,
+    "formacionProfesional":{
+        "fpb":60,
+        "cfgm":40,
+        "cfgs":40
+    },
+    "bachillerato":400
+},
+"nombre":"Colegio Sagrado Corazon",
+"ciudad":{
+    "nombre":"Malaga",
+    "provincia":"Malaga",
+    "cp":29004,
+    "distancia":0
+}
+}
