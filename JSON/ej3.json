@@ -1,0 +1,46 @@
+{
+    "apellidosYNombre": "Gutierrez Sanchez Pedro",
+    "datosContacto": {
+        "correoElectronico": "correo@gmail.com",
+        "telefono": "123456789"
+    },
+    "ciudadOrigen": "Malaga",
+    "nombresAcompañantes": [
+        "juan",
+        "antonio",
+        "alba"
+    ],
+    "gastosTotales": 500,
+    "destinos": [
+        {
+            "satisfecho": true,
+            "ciudad": "madrid",
+            "hotel": {
+                "nombre": "hotel madrid",
+                "estrellas": 4,
+                "precioNoche": 35,
+                "numNoches": 3
+            }
+        },
+        {
+            "satisfecho": false,
+            "ciudad": "bruselas",
+            "hotel": {
+                "nombre": "hotel bruselas",
+                "estrellas": 3,
+                "precioNoche": 20,
+                "numNoches": 4
+            }
+        },
+        {
+            "satisfecho": true,
+            "ciudad": "sevilla",
+            "hotel": {
+                "nombre": "hotel sevilla",
+                "estrellas": 2,
+                "precioNoche": 10,
+                "numNoches": 7
+            }
+        }
+    ]
+}
