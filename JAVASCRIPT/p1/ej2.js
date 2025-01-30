@@ -39,6 +39,6 @@ let probCrtico = 0.5;
 let esCrtico = Math.random() < probCrtico;
 let daño = esCrtico ? dañoBase * multCritico : dañoBase;
 
-console.log(`Nombre Cadena: ${nombreCadena}`);
-console.log("Puntos Float: ", puntosFloat);
-console.log("El heroe Inflige ")
+console.log(`Nivel Cadena: ${nivelCadena}`);
+console.log(`Puntos Float:  ${puntosFloat}`);
+console.log(`El heroe Inflige ${dañoBase} puntos de daño porque esCritico tiene valor de ${esCrtico}`);
