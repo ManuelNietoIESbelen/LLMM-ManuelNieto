@@ -1,18 +1,18 @@
-const nombre="Exarion";
-const armaPrincipal="Espada del Destino";
-let armaSecundaria="Arco simple";
+const nombre = "Exarion";
+const armaPrincipal = "Espada del Destino";
+let armaSecundaria = "Arco simple";
 let nivel = 5;
-let puntosDeVida=100;
-let armaduraEquipada=true;
+let puntosDeVida = 100;
+let armaduraEquipada = true;
 
-let nivelCadena=nivel.toString();
-let puntosFloat=parseFloat(puntosDeVida);
+let nivelCadena = nivel.toString();
+let puntosFloat = parseFloat(puntosDeVida);
 
 
-let dificultad = parseInt(Math.random()*3+1);
-let experienciaActual=90;
-let experienciaGanada=30;
-let experienciaNecesaria=100;
+let dificultad = parseInt(Math.random() * 3 + 1);
+let experienciaActual = 90;
+let experienciaGanada = 30;
+let experienciaNecesaria = 100;
 
 
 
@@ -37,17 +37,17 @@ console.log("");
 console.log("------COMBATE------");
 if (dificultad === 1) {
     console.log("La dificultad: Novato");
-}else if(dificultad==2){
+} else if (dificultad == 2) {
     console.log("La dificultad: Media");
-}else{
+} else {
     console.log("La dificultad: Profesional");
 }
 console.log(`El heroe Inflige ${daño} puntos de daño porque esCritico tiene valor de ${esCrtico}`);
 
-puntosDeVida=puntosDeVida-30;
-experienciaActual+=experienciaGanada;
-if (experienciaActual>experienciaNecesaria) {
-    experienciaActual=experienciaActual-experienciaNecesaria;
+puntosDeVida = puntosDeVida - 30;
+experienciaActual += experienciaGanada;
+if (experienciaActual > experienciaNecesaria) {
+    experienciaActual = experienciaActual - experienciaNecesaria;
     nivel++;
 }
 
@@ -68,19 +68,19 @@ console.log(`Experiencia actual : ${experienciaActual}`);
 
 console.log("");
 console.log("------COMBATE------");
-if (dificultad === 1) {
+if (dificultad == 1) {
     console.log("Dificultad: Novato");
-}else if(dificultad==2){
+} else if (dificultad == 2) {
     console.log("Dificultad: Media");
-}else{
+} else {
     console.log("Dificultad: Profesional");
 }
 console.log(`El heroe Inflige ${daño} puntos de daño porque esCritico tiene valor de ${esCrtico}`);
 
-puntosDeVida=puntosDeVida-30;
-experienciaActual+=experienciaGanada;
-if (experienciaActual>experienciaNecesaria) {
-    experienciaActual=experienciaActual-experienciaNecesaria;
+puntosDeVida = puntosDeVida - 30;
+experienciaActual += experienciaGanada;
+if (experienciaActual > experienciaNecesaria) {
+    experienciaActual = experienciaActual - experienciaNecesaria;
     nivel++;
 }
 
@@ -99,12 +99,13 @@ console.log(`Armadura equipada: ${armaduraEquipada}`);
 console.log(`Experiencia actual : ${experienciaActual}`);
 
 console.log("------DUNGEON------")
-let monedas =[3,5,7,1];
-let atuendos =["0:Duende, 1:Arquero, 2:Caballero"];
+let monedas = [3, 5, 7, 1];
+let atuendos = ["0:Duende", "1:Arquero", "2:Caballero"];
 let monedasTotales;
 
-for  (let moneda of monedas) {
+for (let moneda of monedas) {
     console.log(`Moneda encontrada: ${moneda}`);
     monedasTotales += moneda;
 }
-console.log(`Monedas totales: ${monedasTotales}`);
+let monedasTotalesInt = parseInt(monedasTotales);
+console.log(`Monedas totales: ${monedasTotalesInt}`);
