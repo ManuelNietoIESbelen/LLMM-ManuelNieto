@@ -1,9 +1,22 @@
-const p1=document.querySelector('.parrafo');
-const p2=document.querySelector('.parrafo');
-const b=document.querySelector('body');
 
 
-p1.addEventListener("click",()=>alert("parafo 1 clcik "));
-b.addEventListener("load",mensaje);
+let contador=0;
+function contarClicks() {
+    contador++;
+    alert(`Has pulsado el botón ${contador} veces`);
+}
 
-function mensaje(){alert("ALERTA")}
+window.addEventListener("load", () => alert("Bienvenidos a la practica de eventos"));
+
+document.querySelector('.click').addEventListener("click", () => alert("Haz realizado un click"));
+
+document.querySelector('.img1').addEventListener("click", () => alert("Haz realizado un click"));
+
+document.querySelector('.img2').addEventListener("mouseleave", (num3));
+
+document.querySelector('.dobleclick').addEventListener("dblclick", () => alert("Has realizado doble click"));
+
+document.querySelector("#button").addEventListener("click", contarClicks)
+
+
+

@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+div{
+    background-color: bisque;
+    margin: 5px;
+    text-align: center;
+    height: 300px;
+    color: brown;
+    font-size: 20px;
+}
+div p{
+    margin-top: 50px;
+}
+img{
+    margin-top: 30px;
+    width: 200px;
+}
+button{
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+}
