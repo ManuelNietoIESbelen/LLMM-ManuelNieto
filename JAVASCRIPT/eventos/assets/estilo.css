@@ -1,6 +1,7 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-columns: 1fr 1fr 1fr;   
+    background-color: aquamarine; 
 }
 
 div{
@@ -10,6 +11,8 @@ div{
     height: 300px;
     color: brown;
     font-size: 20px;
+    border: solid 4px rgb(31, 173, 255);
+    border-radius: 20%;
 }
 div p{
     margin-top: 50px;
@@ -22,4 +25,5 @@ button{
     margin-top: 30px;
     width: 200px;
     height: 30px;
+    background-color: brown
 }
