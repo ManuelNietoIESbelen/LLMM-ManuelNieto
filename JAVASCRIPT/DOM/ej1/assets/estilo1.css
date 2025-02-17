@@ -11,9 +11,10 @@ body{
 div{
     text-align: center;
 }
-button{
+.botonFondo{
     margin-top: 100px;
 }
+
 
 .divPar{
     background-color: black;
@@ -23,4 +24,14 @@ button{
 
 .divParCambio{
     background-color: red;
+}
+
+#msg{
+    font-weight: bold;
+}
+.bordeVerde{
+    border: solid 3px green;
+}
+.bordeRojo{
+    border: solid 3px red;
 }
