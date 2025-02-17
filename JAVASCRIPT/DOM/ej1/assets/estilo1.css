@@ -1,0 +1,26 @@
+
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    background-color: rgb(255, 255, 255); 
+    margin: auto;
+}
+
+div{
+    text-align: center;
+}
+button{
+    margin-top: 100px;
+}
+
+.divPar{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+}
+
+.divParCambio{
+    background-color: red;
+}
