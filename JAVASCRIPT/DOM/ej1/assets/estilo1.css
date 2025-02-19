@@ -11,6 +11,15 @@ body{
 div{
     text-align: center;
 }
+.p1{
+    margin-top: 100px;
+
+}
+
+img{
+    margin-top: 50px;
+}
+
 .botonFondo{
     margin-top: 100px;
 }
@@ -34,4 +43,25 @@ div{
 }
 .bordeRojo{
     border: solid 3px red;
+}
+
+
+
+.capaCambioColor button {
+    margin: 5px;
+}
+
+.capaNegraLetrasBlancas{
+    background-color: black;
+    color: white;
+}
+
+.capaBlancaLetrasNegras{
+    background-color: white;
+    color: black;
+}
+
+.capaGrisLetrasRojas{
+    background-color: grey;
+    color: red;
 }
