@@ -1,0 +1,14 @@
+.titulo{
+    color: red;
+}
+body{
+
+    background-color: #f0f0f0;
+    text-align: center;
+}
+table{
+
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
