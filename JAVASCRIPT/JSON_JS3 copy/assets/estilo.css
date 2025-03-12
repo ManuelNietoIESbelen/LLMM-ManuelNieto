@@ -1,0 +1,22 @@
+.titulo{
+    color: rgb(52, 248, 255);
+}
+body{
+
+    background-color: #685b5b;
+    text-align: center;
+}
+select{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+table{
+    border: white 2px solid;
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 50%;
+    color: white;
+    font-size: 25px;
+}

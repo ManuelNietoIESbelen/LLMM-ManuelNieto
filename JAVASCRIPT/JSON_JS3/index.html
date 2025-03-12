@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Y Morty</title>
+    <link rel="stylesheet" href="./assets/estilo.css">
+</head>
+
+<body>
+    <h1 class="titulo">BUSCADOR RICK Y MORTY</h1>
+    <form id="searchForm"></form>
+    <select id="nombrePersonaje" name="nombrePersonaje">
+        <option value="1">Rick Sanchez</option>
+        <option value="2">Morty Smith</option>
+        <option value="3">Summer Smith</option>
+        <option value="4">Beth Smith</option>
+        <option value="5">Jerry Smith</option>
+    </select>
+    <button class="btn" type="submit">Buscar</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Género</th>
+            <th>Imagen del personaje</th>
+            <th>Numero de episodios donde ha salido el personaje</th>
+        </tr>
+        <tr>
+            <td>
+                <p class="name"></p>
+            </td>
+            <td>
+                <p class="especie">
+            </td>
+            <td>
+                <p class="genero"></p>
+            </td>
+            <td>
+                <img class="img"></img>
+            </td>
+            <td>
+                <p class="numEpisodios"></p>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./assets/js.js"></script>
+</body>
+
+</html>
