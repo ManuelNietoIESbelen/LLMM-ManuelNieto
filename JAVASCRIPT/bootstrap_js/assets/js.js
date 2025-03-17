@@ -2,52 +2,86 @@ let grises = document.querySelectorAll('#gris');
 let azules = document.querySelectorAll('#azul');
 const igual = document.querySelector('#igual');
 const c = document.querySelector('#c');
+let historial = document.querySelector('.historial');
 
 let display = document.querySelector('#display');
 
 
-let primerOp = 0;
-let segundoOp = 0;
+let primerOp = "";
+let segundoOp = "";
 let operacion = "";
 
 
-igual.addEventListener('click', calcular);
+
+
 c.addEventListener('click', limpiar);
 
 grises.forEach(boton => {
     boton.addEventListener('click', () => {
-        if (operacion !== "") {
-            display.value= "";
-
-        } else  {
-            
+        if (operacion === "") {
+            primerOp += boton.value;
+        }
+        if (primerOp !== 0 && operacion !== "") {
+            segundoOp += boton.value;
         }
         pintar();
     });
 });
 
 
+azules.forEach(boton => {
+    boton.addEventListener('click', () => {
+        operacion = boton.value;
+        pintar();
+    });
+});
+
+igual.addEventListener('click', ()=> { 
+    display.value = calcular(primerOp, segundoOp, operacion);
+    primerOp = display.value;
+    segundoOp = "";
+    operacion = "";
+    
+    historial.textContent += display.value + ", ";
+    
+
+});
+
 
 
 function pintar() {
-    display.innerHTML = primerOp + operacion + segundoOp;
-}   
+    display.value = primerOp + operacion + segundoOp;
+}
 
 
-function calcular(primerOp, segundoOp, operacion) {
+function calcular() {
+    primerOpe = parseFloat(primerOp);
+    segundoOpe = parseFloat(segundoOp);
+
+
+    if (isNaN(primerOpe) || isNaN(segundoOpe)) {
+        return "Error";
+    }
+
     switch (operacion) {
         case '+':
-            return primerOp + segundoOp;
+            return primerOpe + segundoOpe;
         case '-':
-            return primerOp - segundoOp;
+            return primerOpe - segundoOpe;
         case '*':
-            return primerOp * segundoOp;
+            return primerOpe * segundoOpe;
         case '/':
-            return primerOp / segundoOp;
+            return primerOpe / segundoOpe;
 
     }
+
+    
 }
 
 function limpiar() {
+    display.value = "";
+    primerOp = "";
+    segundoOp = "";
+    operacion = "";
 
 }
