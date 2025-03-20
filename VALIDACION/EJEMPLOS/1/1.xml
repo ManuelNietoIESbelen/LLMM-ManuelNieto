@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aviso [
+<!ELEMENT aviso (de, para, mensaje, direccion)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST mensaje tipo (x|y|z) "x">
+]>
+<aviso>
+    <de>Carlos</de>
+    <para>María</para>
+    <mensaje tipo="x">¡Hola María! ¿Cómo estás?</mensaje>
+    <direccion>Av. 123, Col. 456</direccion>
+</aviso>   
