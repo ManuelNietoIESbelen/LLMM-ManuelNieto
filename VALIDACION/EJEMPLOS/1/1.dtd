@@ -1,0 +1,8 @@
+<!ELEMENT aviso (de, (para|cc)+, mensajes, direccion?)><!-- ?:  o 0 o 1-->
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT mensajes (mensaje+)><!-- + : puede tener 1 o mas mensajes  *: permite 0 o mas mensajes-->
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST mensaje tipo (x|y|z) "x">
