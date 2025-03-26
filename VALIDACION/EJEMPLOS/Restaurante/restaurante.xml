@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurante SYSTEM "restaurante.dtd">
+<restaurante>
+    <menu>
+        <plato>
+            <nombre>Ensalada de la casa</nombre>
+            <categoria>entrada</categoria>
+            <ingredientes>
+                <ingrediente>Lechuga</ingrediente>
+                <ingrediente>Tomate</ingrediente>
+                <ingrediente>Atún</ingrediente>
+                <ingrediente>Maíz</ingrediente>
+                <ingrediente>Queso</ingrediente>
+                <ingrediente>Oliva</ingrediente>
+            </ingredientes>
+            <precio moneda="EUR">5.00</precio>
+        </plato>
+        <plato>
+            <nombre>Paella</nombre>
+            <categoria>principal</categoria>
+            <ingredientes>
+                <ingrediente>Arroz</ingrediente>
+                <ingrediente>Pollo</ingrediente>
+                <ingrediente>Marisco</ingrediente>
+                <ingrediente>Verduras</ingrediente>
+            </ingredientes>
+            <precio moneda="USD">12.00</precio>
+        </plato>
+    </menu>
+    <recetas>
+        <receta comensales="adultos">
+            <nombre>Paella</nombre>
+            <ingredientesReceta>
+                <ingredienteReceta cantidad="200g">Arroz</ingredienteReceta>
+                <ingredienteReceta cantidad="100g">Pollo</ingredienteReceta>
+                <ingredienteReceta cantidad="2u">Marisco</ingredienteReceta>
+            </ingredientesReceta>
+            <proceso>
+                <paso>1. Cocer el arroz</paso>
+                <paso>2. Cocer el pollo</paso>
+                <paso>3. Cocer el marisco</paso>
+            </proceso>
+        </receta>
+        <receta comensales="ninios">
+            <nombre>Ensalada de la casa</nombre>
+            <ingredientesReceta>
+                <ingredienteReceta cantidad="100g">Lechuga</ingredienteReceta>
+                <ingredienteReceta cantidad="50g">Tomate</ingredienteReceta>
+                <ingredienteReceta cantidad="50g">Atún</ingredienteReceta>
+                <ingredienteReceta cantidad="50g">Maíz</ingredienteReceta>
+                <ingredienteReceta cantidad="50g">Queso</ingredienteReceta>
+                <ingredienteReceta cantidad="50g">Oliva</ingredienteReceta>
+            </ingredientesReceta>
+            <proceso>
+                <paso>1. Lavar la lechuga</paso>
+                <paso>2. Cortar el tomate</paso>
+                <paso>3. Añadir el atún</paso>
+                <paso>4. Añadir el maíz</paso>
+                <paso>5. Añadir el queso</paso>
+                <paso>6. Añadir la oliva</paso>
+            </proceso>
+        </receta>
+    </recetas>
+    <clientes>
+        <cliente>
+            <nombre>Juan</nombre>
+            <telefono>123456789</telefono>
+            <correo>juan@gmail.com</correo>
+            <pedidos>
+                <pedido>
+                    <fecha>2020-12-01</fecha>
+                    <platosPedidos>
+                        <platoPedido>ensalada</platoPedido>
+                        <platoPedido>paella</platoPedido>
+                    </platosPedidos>
+                </pedido>
+            </pedidos>
+        </cliente>
+    </clientes>
+</restaurante>
