@@ -1,0 +1,86 @@
+{
+    "adopciones": [
+        {
+            "animal": {
+                "nombre": "Sandy",
+                "tipo": "Perro",
+                "raza": "Podenco",
+                "edad": 7
+            },
+            "adoptante": {
+                "nombre": "Pepe Perez",
+                "dni": "23456789L",
+                "correo": "dmonrui@g.educaand.es",
+                "telefono": "+34987654321"
+            },
+            "ciudad": "Malaga",
+            "nombresCuidadores": [
+                "maria",
+                "pedro",
+                "alba"
+            ],
+            "fechaEntrada": {
+                "dia": 12,
+                "mes": 4,
+                "anio": 2020
+            },
+            "cuidados": {
+                "desparasitado": true,
+                "alimentacion": "pienso",
+                "vacunas": [
+                    {
+                        "nombre": "rabia",
+                        "precio": 10,
+                        "reaccion": true
+                    },
+                    {
+                        "nombre": "Parvovirus",
+                        "precio": 15,
+                        "reaccion": false
+                    }
+                ]
+            }
+        },
+        {
+            "animal": {
+                "nombre": "Tobi",
+                "tipo": "gato",
+                "raza": "egipcio",
+                "edad": 3
+            },
+            "adoptante": {
+                "nombre": "Manuel Nieto",
+                "dni": "45697214P",
+                "correo": "mniejim1703@g.educaand.es",
+                "telefono": "+34756984147"
+            },
+            "ciudad": "Ronda",
+            "nombresCuidadores": [
+                "manuel",
+                "martin",
+                "raul"
+            ],
+            "fechaEntrada": {
+                "dia": 25,
+                "mes": 3,
+                "anio": 2025
+            },
+            "cuidados": {
+                "desparasitado": false,
+                "alimentacion": "pescado",
+                "vacunas": [
+                    {
+                        "nombre": "pulgas",
+                        "precio": 19,
+                        "reaccion": false
+                    },
+                    {
+                        "nombre": "Parvovirus",
+                        "precio": 15,
+                        "reaccion": false
+                    }
+                ]
+            }
+        }
+    ]
+}

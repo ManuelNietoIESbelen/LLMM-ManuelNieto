@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="cancion">
+
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="titulo" type="nombrePropio"/>
+				<xs:element name="year" type="xs:gYear" />
+				<xs:element name="artista" type="nombrePropio" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="nombrePropio"/>
+	<xs:simpleType name="year"/>
+</xs:schema>

@@ -1,0 +1,100 @@
+{
+    "armarios": [
+        {
+            "tipo": 1,
+            "articulos": [
+                {
+                    "tipo": "pantalon",
+                    "perchas": [
+                        {
+                            "tipo": "vaquero",
+                            "disponible": true
+                        },
+                        {
+                            "tipo": "lino",
+                            "disponible": true
+                        },
+                        {
+                            "tipo": "algodon",
+                            "disponible": false
+                        }
+                    ]
+                },
+                {
+                    "tipo": "camisa",
+                    "perchas": [
+                        {
+                            "tipo": "vaquero",
+                            "disponible": false
+                        },
+                        {
+                            "tipo": "lino",
+                            "disponible": true
+                        },
+                        {
+                            "tipo": "algodon",
+                            "disponible": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tipo": 2,
+            "articulos": [
+                {
+                    "tipo": "pantalon",
+                    "perchas": [
+                        {
+                            "tipo": "chandal",
+                            "disponible": true
+                        },
+                        {
+                            "tipo": "plastico",
+                            "disponible": true
+                        },
+                        {
+                            "tipo": "elastico",
+                            "disponible": true
+                        }
+                    ]
+                },
+                {
+                    "tipo": "camiseta",
+                    "perchas": [
+                        {
+                            "tipo": "chandal",
+                            "disponible": false
+                        },
+                        {
+                            "tipo": "plastico",
+                            "disponible": false
+                        },
+                        {
+                            "tipo": "elastico",
+                            "disponible": false
+                        },
+                        {
+                            "tipo": "lino",
+                            "disponible": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tipo": 3,
+            "articulos": [
+                {
+                    "tipo": "zapato",
+                    "perchas": [
+                        {
+                            "tipo": "cuero",
+                            "disponible": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

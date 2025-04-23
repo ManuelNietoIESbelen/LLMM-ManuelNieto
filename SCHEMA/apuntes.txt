@@ -1,0 +1,73 @@
+Resumen: XML-Schema (XSD)
+
+XML Schema (XSD) es un lenguaje que define la estructura y restricciones de un documento XML. Es más potente y detallado que los DTDs tradicionales. Se utiliza principalmente en contextos académicos o profesionales que requieren validaciones precisas de datos.
+
+Apuntes rápidos de XML Schema (XSD)
+
+¿Qué permite hacer XML Schema?
+- Especificar qué elementos y atributos puede tener un XML.
+- Definir tipos de datos para elementos y atributos.
+- Establecer valores por defecto o fijos.
+- Controlar la cantidad de veces que un elemento puede aparecer (minOccurs, maxOccurs).
+- Definir la estructura jerárquica y el orden entre elementos.
+
+Estructura básica
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Declaración de elementos aquí -->
+</xs:schema>
+
+Elementos básicos en XSD
+<xs:element>   → Define un elemento XML.
+<xs:attribute> → Define un atributo.
+<xs:complexType> → Elemento que puede contener otros elementos/atributos.
+<xs:simpleType> → Define un tipo simple con restricciones.
+<xs:sequence>  → Los elementos deben aparecer en orden.
+<xs:choice>    → Solo uno de varios elementos puede aparecer.
+<xs:all>       → Todos los elementos pueden aparecer en cualquier orden.
+
+Tipos de datos comunes
+- xs:string → Texto
+- xs:integer → Enteros
+- xs:boolean → true o false
+- xs:decimal, xs:date, xs:time, etc.
+
+Restricciones útiles (facetas)
+- minInclusive / maxInclusive: límites numéricos.
+- enumeration: valores predefinidos (como en menús desplegables).
+- pattern: validación con expresiones regulares.
+
+Ejemplo sencillo de validación
+
+XML:
+<contacto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="contacto.xsd">
+  <nombre>Juan</nombre>
+  <edad>34</edad>
+</contacto>
+
+XSD:
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="contacto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="edad" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+Validación de documentos
+Un XML se valida contra su XSD usando:
+xsi:noNamespaceSchemaLocation="archivo.xsd"
+
+Comentarios en XSD
+<xs:annotation>
+  <xs:documentation>Este esquema valida mensajes</xs:documentation>
+</xs:annotation>
+
+Actividad propuesta (resumen)
+Crear un validador de expedientes académicos:
+- Cada expediente incluye titulación, nombre del estudiante y módulos.
+- Cada módulo tiene atributos: nombre, aprobado (sí/no), curso ("Primero", "Segundo").

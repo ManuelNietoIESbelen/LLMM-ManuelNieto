@@ -2,7 +2,7 @@
 
 <!ELEMENT menu (plato+)>
 <!ELEMENT plato (nombre,categoria,ingredientes,precio)>
-<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT menu (plato+)>
 <!ELEMENT categoria (#PCDATA)>
 <!ELEMENT ingredientes (ingrediente+)>
 <!ELEMENT ingrediente (#PCDATA)>
